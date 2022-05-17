@@ -1,2 +1,2 @@
-# sprintf_implementation
-A simple sprintf implementation working with all flags &amp; specifiers
+# string_h_implementation
+A simple string.h implementation fully covered with unit tests.
