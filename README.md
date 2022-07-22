@@ -7,7 +7,7 @@
 * [Tests](#tests)
 * [Credits](#credits)
 
-## General info 
+## Introduction
 Implementation of libc `string.h` functions with some additions, including `sscanf` and `ssprintf` with all specifiers and flags. Fully covered with unit-tests under TDD approach. 
 
 ## Goals
