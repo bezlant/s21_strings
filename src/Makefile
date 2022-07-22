@@ -39,9 +39,7 @@ STDFLAGS=-c -Wall -Wextra -Werror -std=c11
 CFLAGS?= $(STDFLAGS) $(ASAN)
 TST_CFLAGS:= -g $(STDFLAGS) #$(shell pkg-config --cflags check)
 GCOV_FLAGS?=-fprofile-arcs -ftest-coverage
-TST_LIBS?=-lcheck
-#ubuntu libs
-#TST_LIBS?=-lcheck_pic $(shell pkg-config --libs check) -lpthread -lrt -lm -lsubunit -L. s21_string.a
+TST_LIBS?=$(shell pkg-config --cflags --libs check) -lm
 
 all: test  s21_string.a gcov_report
 
